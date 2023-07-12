@@ -1,0 +1,340 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+}
+
+body{font-family:arial, 'sans-serif'; font-size:1em; background: #725780}
+	a{text-decoration:none;}
+	a:hover{text-decoration:underline;}
+
+.topo{
+	width:100%;
+	padding:10px 0;
+	height:65px;
+	background:linear-gradient(43deg, #5c52bd, #159ac7);
+	background:-webkit-linear-gradient(43deg, #5c52bd, #159ac7);
+	background:-moz-linear-gradient(43deg, #5c52bd, #159ac7);
+	background:-ms-linear-gradient(43deg, #5c52bd, #159ac7);
+	margin-bottom:20px;
+}
+
+
+/*conteudo centraliza tudo*/
+.conteudo{
+	width:1000px;
+	margin:0 auto;
+}
+.caixa{
+	width: 100%;
+    float: left;
+    background:#598982;
+    border: solid 1px #fbfbfb73;
+    box-shadow: 0 0px 6px 0 #00000066;
+    border-radius: 10px;
+    overflow: hidden;
+    min-height: 500px;
+    margin-top: 3rem;
+}
+
+.caixa h1{
+	    text-align: center;
+    color: #f1eef2;
+    padding: 10px;
+    margin-top: 0px;
+    margin-bottom:1.8rem;
+    border-bottom: solid 1px #ffffff80;
+    font-size: 1.6rem;
+}
+
+.caixa .position-absolute.col-4{
+	top:0;
+	bottom:0;
+	max-width: 37.333333%;
+    background: #fff;
+padding-top:1rem
+}
+.caixa .alt.col-8{
+	margin-left: 40%;
+    max-width: 55.666667%;
+}
+
+.caixa ::-webkit-input-placeholder{
+    color: #fff;
+}
+.caixa :-ms-input-placeholder{
+    color: #fff;
+}
+.caixa ::input-placeholder{
+    color: #fff;
+}
+.caixa input,
+.caixa select
+{
+    color: #fff;
+}
+.caixa .btn.btn-verde {
+	padding:10px ​8px!important;
+    border: 0;
+    background: #4ddda8;
+    color: #FFF!important;
+}
+
+.caixa .btn.btn-azul {
+    border: 0;
+}
+
+.cx-home{
+	width:100%;
+	float:left;
+	background:linear-gradient(43deg, #3a30a0, #018ac7);
+	background:-webkit-linear-gradient(43deg, #3a30a0, #018ac7);
+	background:-moz-linear-gradient(43deg, #3a30a0, #018ac7);
+	background:-ms-linear-gradient(43deg, #3a30a0, #018ac7);
+	border-radius:5px;
+	overflow:hidden;
+	min-height:190px;
+}
+
+/*lista de contatos*/
+.base-lista{
+	width:100%;
+	float:left;
+	padding:20px;
+	margin-top:20px;
+}
+.base-lista .btn{
+	display:inline-block;
+}
+.base-lista .btn.novo{
+	background:#009FD5;
+	text-transform:uppercase;
+}
+.base-lista .lst{
+	width:100%;
+	float:left;
+	background: radial-gradient(1px at 50%, #0085B2 0%, #003366 580px);
+	background: -webkit-radial-gradient(1px at 50%, #0085B2 0%, #003366 580px);
+	background: -moz-radial-gradient(1px at 50%, #0085B2 0%, #003366 580px);
+	border-radius:5px;
+	padding:20px;
+	border:solid 1px #00335D;
+	margin-bottom:15px;
+	display:none
+}
+
+.base-lista .lst select,
+.base-lista .lst input{
+	background:#fff;
+	padding:10px;
+	border-radius:3px;
+	border:0;
+	width: 100%;
+}
+.base-lista .lst select{
+	padding:9px;
+}
+.base-lista .lst input[type=submit]{
+	background:#1cbcf9;
+	text-transform:uppercase;
+}
+.base-lista .lst input[type=submit]:hover{
+	background:#0069D2;
+	cursor:pointer;
+}
+
+.base-lista  span.itens{
+	float:right;
+	color:#444;
+	text-align:right;
+	border:solid 1px #ddd;
+	border-radius:5px;
+	padding:8px 10px
+}
+.base-lista span.itens b{
+	color:#18a9e1;
+}
+.base-lista .ico-list{
+	width:20px;
+	height:20px;
+	content:url(../img/ico-list-min2.png);
+	display:inline-block;
+	margin-right:10px;
+	position:relative;
+	top:3px;
+}
+
+.base-lista table{
+	width:100%;
+}
+.base-lista table thead th{
+	background:#ced6df;
+	padding:9px;
+	color:#212121;
+	font-weight:inherit;
+	font-size:.9em
+}
+
+.base-lista table tbody td{
+	padding:10px;
+	color:#444444;
+	font-size:.9em
+}
+.base-lista .btn.alterar,
+.base-lista .btn.excluir{
+	padding:8px 10px;text-transform:uppercase;
+	font-size:.8em
+}
+.base-lista .btn.alterar{
+	background:#007daa
+}
+.base-lista .btn.excluir{
+	background:#DC3545
+}
+.base-lista tr:nth-of-type(odd){
+	background:#EEEEEE
+}
+
+.nao-encontrado{
+	color:#df4848;
+	text-transform:uppercase;
+}
+
+.nao-encontrado:before{
+	content:url(../img/error2.png);
+	margin-right:5px;
+}
+
+/*paginacao*/
+.paginacao{
+	width:100%;
+	float:left;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.paginacao span{
+	float:left;
+}
+.paginacao span p{
+	color:#4f4f4f;
+	margin-top: 10px;
+}
+.paginacao ul{
+	float:right;
+}
+.paginacao ul li{
+	display:inline-block;
+	margin:0;
+	float:left;
+	border:solid 1px #ddd;
+}
+.paginacao ul li a{
+	display:inline-block;
+	padding:10px 15px;
+	color:#30A9E5;
+}
+.paginacao ul li a:hover{
+	background:#eee;text-decoration:none
+}
+.paginacao ul li:first-child{
+	border-radius:5px 0 0 5px;
+}
+.paginacao ul li:last-child{
+	border-radius:0 5px 5px 0;
+}
+.paginacao ul .ativo{
+	display:inline-block;
+	padding:10px 15px;
+	color:#fff;
+	background:#30A9E5;
+	border:solid 1px #30A9E5;
+}
+.paginacao .primeiro:before{
+	content:url(../img/ico-primeiro.png);
+	padding-right:8px;
+	position:relative;
+	top:2px;
+}
+.paginacao .ultimo:after{
+	content:url(../img/ico-ultimo.png);
+	padding-left:8px;
+	position:relative;
+	top:2px;
+}
+.paginacao .anterior:before{
+	content:url(../img/ico-anterior.png);
+	padding-right:8px;
+	position:relative;
+	top:2px;
+}
+.paginacao .proximo:after{
+	content:url(../img/ico-proximo.png);
+	padding-left:8px;
+	position:relative;
+	top:2px;
+}
+
+/* base-form*/
+.base-form{
+	width:100%;
+	float:left;
+	padding:20px 35px;
+	margin-top:20px;
+	padding-bottom:40px;
+}
+.base-form .thead{
+	background:rgba(206,212,218,0.40)!important;
+	border-bottom:solid 1px #CED4DA;
+	color:#666;
+	margin-bottom:10px
+}
+.base-form .caixa-form{
+	width:100%;
+	float:left;
+	border:solid 1px #CED4DA;
+	border-radius:5px;
+}
+.base-form .caixa-form form{
+	padding:20px 40px;
+}
+
+.base-form .caixa-form form label{
+	display:block;
+	font-size:.9em;
+	    color: #2b2b2b;
+    margin-bottom: 7px;
+}
+.base-form .caixa-form .btn{
+	margin:0 auto;
+	font-size:1.2rem;
+	text-transform:uppercase;
+	margin-bottom:30px;
+}
+
+/*rodape*/
+.rodape{
+	width:100%;
+	float:left;
+	background:#b5b5b5;
+	padding:15px;
+	text-align:center;
+	margin-top:40px;
+}
+.rodape p{
+	color:#79796A;
+	font-size:.9em;
+}
+
+
+/*991*/
+@media (max-width:991px){
+	
+.caixa .position-absolute.col-4{display:none!important
+}
+.caixa .alt.col-8 {margin-left: 0px;max-width: 1005;padding: 0 4rem;}
+.caixa {margin:10px 0;}
+
+}

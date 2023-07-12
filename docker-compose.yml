@@ -1,0 +1,18 @@
+services:
+ web:
+  image: nginx:latest
+  container_name: nginx
+  restart: always
+  ports:
+   - "81:80"
+  volumes:
+   - ./www:/www
+   - ./site.conf:/etc/nginx/conf.d/site.conf
+ 
+  links:
+  - php
+ php:
+  image: php:7.3-fpm
+  container_name: php-fpm
+  volumes:
+  - ./www:/www
